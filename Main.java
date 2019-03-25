@@ -7,10 +7,10 @@ import java.util.Collections;
 public class Main{
 
     public static void main (String [] args) {
-        ArrayList <Card> deck = new ArrayList <Card> ();
-        readDeck(deck);
-        System.out.println("This deck has " + deck.size() + " cards");
-        testHands(deck);
+            ArrayList <Card> deck = new ArrayList <Card> ();
+            readDeck(deck);
+            System.out.println("This deck has " + deck.size() + " cards");
+            testHands(deck);
     }
 
     static ArrayList <Card> readDeck ( ArrayList <Card> deck ) {
@@ -30,10 +30,9 @@ public class Main{
             }
             sc.close();
         }
-    catch (FileNotFoundException e) {
-        e.printStackTrace();
-    }
-
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         return deck;
     }
 
@@ -43,13 +42,13 @@ public class Main{
         int [] cardweights = { -5, 0, 3, 5, 7 };
         int [] historialcounter = {0, 0, 0, 0, 0};
         double points = 0;
-        for ( int i=0; i < 100; i++) {
+        for ( int i = 0; i < 100; i++) {
             System.out.println("--------------------------------------------------------");
             System.out.println("Hand " + (i + 1));
             Collections.shuffle(deck);
             int handsPoint = 0;
             ArrayList <Card> hand = new ArrayList <Card> ();
-            for ( int j = 0; j < 5 ; j++) {
+            for (int j = 0; j < 5 ; j++) {
                 if ( hand.contains(deck.get(j)) ) {
                     if ( deck.get(j).getRestriction() == 1) {
                         handsPoint += cardweights[deck.get(j).getDesirable()];
@@ -66,28 +65,28 @@ public class Main{
                 }
                 System.out.println(deck.get(j).name);
             }
-                System.out.println("This hand has: " + handsPoint + " points");
-                if (handsPoint > 27) {
-                    System.out.println("Excellent hand");
-                    historialcounter[0]++;
-                } else if (handsPoint > 20) {
-                    System.out.println("Very good hand");
-                    historialcounter[1]++;
-                } else if (handsPoint > 13) {
-                    System.out.println("Regular hand");
-                    historialcounter[2]++;
-                } else if (handsPoint > 6) {
-                    System.out.println("Brick hand");
-                    historialcounter[3]++;
-                } else {
-                    System.out.println("Turbo brick hand");
-                    historialcounter[4]++;
-                }
-                points += handsPoint;
+            System.out.println("This hand has: " + handsPoint + " points");
+            if (handsPoint > 27) {
+                System.out.println("Excellent hand");
+                historialcounter[0]++;
+            } else if (handsPoint > 20) {
+                System.out.println("Very good hand");
+                historialcounter[1]++;
+            } else if (handsPoint > 13) {
+                System.out.println("Regular hand");
+                historialcounter[2]++;
+            } else if (handsPoint > 6) {
+                System.out.println("Brick hand");
+                historialcounter[3]++;
+            } else {
+                System.out.println("Turbo brick hand");
+                historialcounter[4]++;
+            }
+            points += handsPoint;
         }
         System.out.println("------------------------------------------------------------------");
         System.out.println("Card Statistics \n");
-        for ( int i=0; i < history.size(); i++) {
+        for (int i = 0; i < history.size(); i++) {
             System.out.println("Card: " + history.get(i).name + " with " + frequency.get(i) + " times");
         }
         System.out.println("------------------------------------------------------------------");

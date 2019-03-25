@@ -1,26 +1,18 @@
-Degrade Buster,1
-Boot Stagguard,1
-Black Dragon Collarserpent,2
-Clock Wyvern,3
-White Dragon Wyverburster,1
-Lady Debug,3
-Lord Balancer,3
-Widget Kit,2
-Cyberse Gadget,2
-Flame Bufferlo,1
-Backup Secretary,2
-Sea Archiver,1
-Cyberse Convertor,2
-Catche Eve L2,2
-Link Infra-Flier,1
-Cyberse Synchron,1
-Dot Scaper,1
-Cyber Magician,1
-Monster Reborn Reborn,1
-Reasoning,1
-Cynet Fusion,1
-Gold Sarcophagus,1
-Monster Reborn,1
-One-Time Passcode,1
-Cynet Ritual,1
-Cyner Backdoor,3
+Thunder Dragondark,3,4,0
+Thunder Dragonroar,3,4,0
+Thunder Dragonhawk,3,3,0
+Thunder Dragon,3,4,1
+Thunder Dragonmatrix,3,2,0
+Thunder Dragonduo,1,0,0
+Batteryman Solar,3,3,0
+Aloof Lupine,3,3,0
+White Dragon Wyverburster,2,1,1
+Black Dragon Collarserpent,2,1,1
+Black Luster Soldier - Envoy of The Beginning,1,0,1
+Ash Blossom,3,3,0
+Allure of Darkness,3,3,1
+Instant Fusion,2,3,0
+Thunder Dragon Fusion,2,3,1
+Gold Sarcophagus,1,3,0
+Monster Reborn,1,2,1
+Foolish Burial,1,2,1
